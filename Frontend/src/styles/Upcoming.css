@@ -1,0 +1,93 @@
+.profile-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 0 auto 40px auto;
+    max-width: 900px;
+    box-shadow: 3px 3px 10px rgba(23, 107, 118, 0.3);
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .avatar {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #176b76;
+    overflow: hidden;
+    box-shadow: 0 0 8px #176b76aa;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* Profile info area */
+  .profile-info {
+    flex-grow: 1;
+  }
+  .profile-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.7rem;
+  }
+  .profile-info .categories {
+    display: flex;
+    gap: 40px;
+    font-weight: 600;
+    margin: 5px 0 15px 0;
+  }
+  .profile-info .address {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  .profile-info .fees {
+    display: flex;
+    gap: 50px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .profile-info .email {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  /* Edit button on far right */
+  .edit-btn {
+    background-color: #147C87;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+    box-shadow: 1px 1px 4px #0f454a;
+    transition: background-color 0.2s ease-in-out;
+    align-self: start;
+  }
+  .edit-btn:hover {
+    background-color: #0f454a;
+  }
+  .status-btn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.status-btn.green {
+  background-color: darkgreen;
+}
+
+.status-btn.grey {
+  background-color: grey;
+}
+
+.status-btn.red {
+  background-color: rgb(218, 32, 32);
+  color: rgb(246, 242, 242); /* better contrast */
+}

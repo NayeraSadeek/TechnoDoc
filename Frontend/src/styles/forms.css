@@ -1,0 +1,262 @@
+.login {
+    margin-top: 20px;
+
+}
+
+.login-img {
+    max-width: 100%;
+    max-height: 620px;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.form-text h4 {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.form-text p {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.text-teal {
+    color: var(--primary-color) !important;
+}
+
+
+
+.btn-teal {
+    width: 200px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(20, 124, 135, 0.25) !important;
+    border-color: var(--primary-color) !important;
+}
+
+input.form-control:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(20, 124, 135, 0.25) !important;
+    outline: none;
+}
+
+.login-co {
+    max-width: 1000px;
+    display: flex;
+    align-items: stretch;
+    height: 620px;
+    width: 100%;
+    margin: auto;
+    border: 3px solid var(--primary-color);
+    border-radius: 40px;
+
+}
+
+.object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.text-white h2 {
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+.text-white p {
+    font-size: 14px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    background: var(--secondary-color);
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.check-icon {
+    font-size: 60px;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+
+.modal-box h2 {
+    color: var(--primary-color);
+}
+
+.modal-box p {
+    color: var(--light-gray);
+    font-size: 12px;
+}
+
+.email-text {
+    color: var(--primary-color);
+}
+
+.subtext a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--primary-color);
+    z-index: 2;
+}
+
+.accordion-body {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.accordion-button {
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 5px var(--primary-color) !important;
+    outline: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #f0fdfd;
+    color: var(--primary-color);
+    box-shadow: var(--primary-color);
+}
+
+.accordion-body input,
+.accordion-body select {
+    border: 2px solid #eee;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.accordion-body input:focus,
+.accordion-body select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+    outline: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 22px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: var(--primary-color);
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px);
+}
+
+.accordion-body input[type="time"] {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary-color) !important;
+    color: var(--primary-color);
+    font-size: 13px;
+    padding: 6px 12px;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color) !important;
+    color: #fff;
+}
+
+.btn-danger {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

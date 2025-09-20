@@ -1,0 +1,136 @@
+.services-title {
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-row {
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.service-row.left {
+    justify-content: flex-start;
+}
+
+.service-row.right {
+    justify-content: flex-end;
+}
+
+.service-box {
+    background-color: rgba(20, 124, 135, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    width: 530px;
+    height: 160px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(20, 124, 135, 0.5);
+}
+
+.service-number {
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.service-box h5 {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.service-box p {
+    font-size: 20px;
+}
+
+.connector-box {
+    position: absolute;
+    z-index: 0;
+}
+
+.connector-box.right {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.connector-box.right::before {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 2px;
+    background-color: rgba(20, 124, 135, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.connector-box.right::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 117px;
+    background-color: rgba(20, 124, 135, 0.5);
+    top: 0;
+    left: 480px;
+}
+
+.connector-box.left {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.connector-box.left::before {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 2px;
+    background-color: rgba(20, 124, 135, 0.5);
+    top: 0;
+    right: 0;
+}
+
+.connector-box.left::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 117px;
+    background-color: rgba(20, 124, 135, 0.5);
+    top: 0;
+    right: 480px;
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        padding: 20px 10px;
+    }
+
+    .connector-box {
+        display: none;
+    }
+
+    .service-number {
+        position: static;
+        font-size: 30px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .service-box h5 {
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    .service-box p {
+        font-size: 18px;
+    }
+}

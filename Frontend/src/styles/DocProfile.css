@@ -1,0 +1,165 @@
+
+.profile-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin: 0 auto 40px auto;
+    max-width: 900px;
+    box-shadow: 3px 3px 10px rgba(23, 107, 118, 0.3);
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .avatar {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #147C87;
+    overflow: hidden;
+    box-shadow: 0 0 8px #176b76aa;
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* Profile info area */
+  .profile-info {
+    flex-grow: 1;
+  }
+  .profile-info h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.7rem;
+  }
+  .profile-info .categories {
+    display: flex;
+    gap: 40px;
+    font-weight: 600;
+    margin: 5px 0 15px 0;
+  }
+  .profile-info .address {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  .profile-info .fees {
+    display: flex;
+    gap: 50px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .profile-info .email {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  /* Edit button on far right */
+  .edit-btn {
+    background-color: #147C87;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+    box-shadow: 1px 1px 4px #0f454a;
+    transition: background-color 0.2s ease-in-out;
+    align-self: start;
+  }
+  .edit-btn:hover {
+    background-color: #0f454a;
+  }
+  .status-btn {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+
+}
+.status-btn.green {
+  background-color: #14873A;
+  color: #FFFFFF 
+
+}
+
+.status-btn.grey {
+  background-color: #AAA8A8;
+  color: #FFFFFF ;
+
+}
+
+.status-btn.yellow {
+  background-color: #C5DF41;
+  color: #FFFFFF ;
+}
+
+  @media (max-width: 620px) {
+    .profile-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+    .profile-info {
+      width: 100%;
+    }
+    .profile-info .categories {
+      justify-content: center;
+      gap: 25px;
+    }
+    .profile-info .fees {
+      flex-direction: column;
+      gap: 5px;
+    }
+    .edit-btn {
+      align-self: center;
+      width: 100%;
+      max-width: 260px;
+    }
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    tr {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #c6d8db;
+    }
+    td {
+      border: none;
+      position: relative;
+      padding-left: 45%;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.95rem;
+    }
+    td.actions {
+      padding-left: 0;
+      gap: 8px;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+    td:before {
+      position: absolute;
+      left: 10px;
+      top: 12px;
+      width: 40%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: 700;
+      color: #147C87;
+    }
+    td:nth-of-type(1):before { content: "Name"; }
+    td:nth-of-type(2):before { content: "Date"; }
+    td:nth-of-type(3):before { content: "Time"; }
+    td:nth-of-type(4):before { content: "Treatment"; }
+    td:nth-of-type(5):before { content: "Payment"; }
+  }

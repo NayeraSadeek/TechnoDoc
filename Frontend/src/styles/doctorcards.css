@@ -1,0 +1,81 @@
+.doctor-cards {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.card {
+  background: #fff;
+  /* height: auto; */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+  .circle-image {
+           width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            margin: 25px auto 15px;
+        }
+
+        .circle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+.doc-info h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.doc-info p {
+  margin: 2px 0;
+  color: #444;
+}
+
+.price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.book-btn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #147C87;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background: #23a3b1;
+}
+
+.btn-arrow {
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #333;
+}
+
+.btn-arrow:hover {
+  color: #206d76;
+}

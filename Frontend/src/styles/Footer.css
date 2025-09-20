@@ -1,0 +1,134 @@
+.footer {
+    background: linear-gradient(135deg, rgba(33, 120, 129, 0.6) 0%, var(--primary-color) 100%);
+    color: white;
+    width: 100%;
+    max-width: 1300px;
+    padding: 40px 20px 15px 20px;
+    border-radius: 16px;
+    margin: 40px auto 20px auto;
+    box-shadow: 0 6px 20px rgba(20, 124, 135, 0.5);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.brand-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 260px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: inline-block;
+    transform: translateX(0);
+}
+
+.link:hover {
+    transform: translateX(6px) scale(1.05);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+}
+
+.contact-item:hover {
+    transform: translateX(6px) scale(1.05);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    color: #147C87;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding-right: 40px;
+        padding-left: 40px;
+        width: 95%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        text-align: left;
+    }
+}
